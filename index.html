@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Deckorama</title>
+		<meta name="author" content="Daniel Saidi, Kristoffer Gustafsson">
+		<meta name="description" content="Deckorama creates deck of cards for your smartphone and tablet.">
+		
+		<link href="static/css/bootstrap.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<link rel="shortcut icon" href="static/img/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/img/icon-144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/img/icon-114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/img/icon-72.png">
+		<link rel="apple-touch-icon-precomposed" href="static/img/icon-57.png">
+		
+		<style type="text/css">
+			body { padding-top: 80px; font-family:Helvetica,Arial,sans-serif; color:#555; }
+			
+			a { color:black; font-weight:bold;  }
+			a img { border: none; }
+			h1, h2, h3, h4 { font-weight:400; font-family:'Droid Serif', serif; }
+			h1 { font-size:4em; }
+			h1 { border-top:solid 1px #ddd; position:relative; margin-bottom:50px; }
+			h1 span { background:white; padding:20px; position:absolute; top:-40px; left:50%; margin-left:-170px; }
+			h2 { font-size:2em; text-align:center; margin-bottom:50px; }
+			h3 { font-weight:normal; font-size:2em; }
+			hr { border-top:solid 1px #ddd; border-bottom:none; height:0px; }
+			footer { border-top:solid 1px #ddd; padding:20px 0 80px 0; text-align:center; color:#ccc; font-size:0.95em; }
+			footer a { color:#888; font-weight:normal; }
+			
+			.container { width:718px; }
+			
+			.app-box { text-align:center; border:solid 1px #ececec; padding:45px 30px 20px 30px; position:relative; margin-top:20px; font-family:'Droid Sans', sans-serif; }
+			.app-box img { position:absolute; left:50%; top:-35px; margin-left:-35px; border:solid 4px white; border-top:none; border-bottom:none; }
+			/*.app-box div.desc { float:left; width:170px; font-size:1.1em; font-family: 'Droid Sans', sans-serif; }
+			.app-box div.price { float:right; width:100px; }*/
+			.app-box div.desc { float:left; width:170px; text-align:left; font-size:1.1em; font-family:'Droid Sans', sans-serif; margin-top:10px; }
+			.app-box div.price { float:right; width:80px; }
+			.app-box div.price .title { font-size:0.9em; margin:5px 0 5px 0; }
+			.app-box div.price .amount { font-size:1.8em; font-weight:200; }
+			.app-box div.price + div { clear:both; }
+			.app-box div.appstore { margin-top:30px; } 
+			.app-box div.new { position:absolute; right:-4px; top:-4px; width:96px; height:96px; background-image:url(static/img/new-banner.png); }
+			.app-box-bottom { height:10px; background-image:url(static/img/box-bottom.png); margin-bottom:40px; }
+		</style>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $("a[rel='external']").attr("target", "_blank");
+			  $(".appstore a").attr("target", "_blank");
+			});
+		</script>
+		
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-2575180-21']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<div class="container">
+				<h1><span>Deckorama</span></h1>
+				<h2>Deck of cards for your smartphones and tablets</h2>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="app-box">
+						<div class="new"></div>
+						<img src="static/img/icon-pickup-deck.png" alt="Pickup Deck app icon" />
+						<h3>Pickup Deck</h3>
+						<div class="desc">Great pickup lines by the flick of a finger.</div>
+						<div class="price">
+							<div class="title">Price</div>
+							<div class="amount">$0.99</div>
+						</div>
+						<div></div>
+						<div class="appstore">
+							Download for <a href="http://itunes.apple.com/app/pickup-deck/id581674449">iPhone/iPad</a>
+						</div>
+					</div>
+					<div class="app-box-bottom"></div>
+				</div>
+
+				<div class="span6">
+					<div class="app-box">
+						<img src="static/img/icon-prank-deck.png" alt="Prank Deck app icon" />
+						<h3>Prank Deck</h3>
+						<div class="desc">Great pranks by the flick of a finger.</div>
+						<div class="price">
+							<div class="title">Price</div>
+							<div class="amount">$0.99</div>
+						</div>
+						<div></div>
+						<div class="appstore">
+							Download for <a href="http://itunes.apple.com/app/prank-deck/id568717911">iPhone/iPad</a>
+						</div>
+					</div>
+					<div class="app-box-bottom"></div>
+				</div>
+				
+				<div class="span6">
+					<div class="app-box">
+						<img src="static/img/icon-quote-deck.png" alt="Quote Deck app icon" />
+						<h3>Quote Deck</h3>
+						<div class="desc">Great quotes by the flick of a finger.</div>
+						<div class="price">
+							<div class="title">Price</div>
+							<div class="amount">$0.99</div>
+						</div>
+						<div></div>
+						<div class="appstore">
+							Download for <a href="http://itunes.apple.com/app/quotes-deck/id569608601">iPhone/iPad</a>
+						</div>
+					</div>
+					<div class="app-box-bottom"></div>
+				</div>
+			</div>
+			
+			<footer>
+				Got feedback or need help? Send an e-mail to <a href="mailto:info@deckorama.com">info@deckorama.com</a> or join us at <a href="http://www.facebook.com/deckorama" rel="external">Facebook</a>. News? Follow us at <a href="http://www.twitter.com/deckorama">Twitter</a>.  
+			</footer>
+		</div>
+	</body>
+</html>
